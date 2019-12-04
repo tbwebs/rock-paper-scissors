@@ -5,7 +5,7 @@
 </head>
 <body>
     <script>
-
+        // computers selection
         function computerPlay(){
             let randomNumber = Math.random();
             if (randomNumber < 0.33){
@@ -16,12 +16,12 @@
                 return 'scissors';
             }
         }
-
+        // prompts user for their selection
         function userPlay(){
             let userPrompt = prompt('Rock, Paper, Scissors?');
             return userPrompt.toLowerCase();
         }
-
+        //plays one round to determine score
         function playRound(playerSelection, computerSelection){
             
             if (((playerSelection === 'rock') && (computerSelection === 'scissors')) ||
@@ -43,7 +43,8 @@
         
         let playerScore = 0;
         let computerScore = 0;
-
+        
+        //five round game displaying winner
         function game(){
 
             for (i = 0; i < 5; i++){
